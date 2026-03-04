@@ -1,55 +1,52 @@
 
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 :root {
-    --primary-green: #4F9D73;
-    --navy-dark: #001A33;
+    --primary-green: #418561;
+    --navy: #03213e;
     --text-gray: #667085;
     --white: #ffffff;
 }
-
-* { margin: 0;
-     padding: 0; 
-     box-sizing: border-box;
-     }
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--navy-dark);
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
 }
-
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--navy);
+}
 .container { 
     width: 90%; 
     max-width: 1200px;
-     margin: 0 auto; 
-    }
-
-
+    margin: 0 auto; 
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 18px 0;
 }
-
 .menu {
-     display: flex; 
-     list-style: none; 
-     gap: 35px; 
-    }
+    display: flex; 
+    list-style: none; 
+    gap: 30px; 
+}
 .menu a { 
     text-decoration: none;
-     color: var(--navy-dark);
-      font-weight: 500; 
-    }
-
-
+    color: var(--navy);
+    font-weight: 500; 
+}
 #banner {
-   
     background: linear-gradient(rgba(0, 22, 45, 0.5), rgba(0, 22, 45, 0.5)), 
                 url('../B13-A01-Knowledge-Vault-main/assets/hero-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     min-height: 80vh; 
     display: flex;
     justify-content: center;
@@ -57,35 +54,26 @@ nav {
     color: white;
     text-align: center;
 }
-
 #banner h1 { 
     font-size: 54px;
-     margin: 20px 0; 
-     font-weight: 800; 
-    }
+    margin: 20px 0; 
+    font-weight: 800; 
+}
 .text-green { 
     color: #4F9D73; 
 }
 #banner p { 
     max-width: 700px;
-     margin: 0 auto 40px; 
-     font-size: 18px;
-      opacity: 0.9; 
-    }
-
-.badge {
-    background: var(--white);
-    color: var(--primary-green);
-    padding: 8px 16px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    margin: 0 auto 40px; 
+    font-size: 18px;
+    opacity: 0.9; 
 }
-
-
+.banner-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .btn {
     padding: 14px 28px;
     border-radius: 8px;
@@ -97,120 +85,125 @@ nav {
     align-items: center;
     gap: 12px;
 }
-
+.btn img {
+    width: 18px; 
+    height: auto;
+}
 .btn-green { 
     background: var(--primary-green); 
     color: var(--white); 
 }
 .btn-green:hover { 
     background: #3e7c5b;
-    transform: translateY(-3px); }
-
+    transform: translateY(-3px); 
+}
 .btn-outline {
-     background: transparent;
-      border: 1.5px solid var(--white);
-       color: var(--white);
-     }
+    background: transparent;
+    border: 1.5px solid var(--white);
+    color: var(--white);
+}
 .btn-outline:hover { 
     background: var(--white); 
-    color: var(--navy-dark);
- }
-
-
+    color: var(--navy);
+}
+.badge {
+    background: var(--white);
+    color: var(--primary-green);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
 #notes { 
     padding: 100px 0; 
     text-align: center; 
 }
-.section-header h2 { 
+.section-head h2 { 
     font-size: 36px; 
     margin-bottom: 15px; 
 }
-.section-header p {
-     color: var(--text-gray); 
-     margin-bottom: 50px;
-     }
-
+.section-head p {
+    color: var(--text-gray); 
+    margin-bottom: 50px;
+}
 .notes-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
-
 .note-card {
     padding: 40px 25px;
     border: 1px solid #f2f2f2;
     border-radius: 12px;
     transition: 0.3s;
 }
-
 .note-card:hover { 
     box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
-}
-
-.icon-box {
+} 
+.iconbox {
     width: 60px; height: 60px;
     border-radius: 50%;
-    margin: 0 auto 25px;
+    margin: 0 auto 28px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.red-bg { background: #FF5E5E; }
-
-.brain-flex { 
+.red-bg { 
+    background: #FF5E5E;
+ }
+.brain { 
     display: flex; 
     align-items: center;
     gap: 80px;
-     padding: 100px 0;
-     }
-.brain-image img {
-     width: 100%;
-      max-width: 550px; 
-    }
+    padding: 100px 0;
+}
+.brain-im img {
+    width: 100%;
+    max-width: 550px; 
+}
 .sub-label { 
     color: var(--primary-green);
-     font-weight: 700;
-      letter-spacing: 1px;
-     }
-.brain-content h2 { 
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.brain-info h2 { 
     font-size: 42px; 
     margin: 15px 0;
- }
-.check-list { 
+}
+.checklist { 
     list-style: none; 
     margin-top: 30px; 
 }
-.check-list li {
-     display: flex; 
-     align-items: center;
-      gap: 15px;
-       margin-bottom: 15px;
-        color: var(--navy-dark);
-         font-weight: 500; 
-        }
-
-
+.checklist li {
+    display: flex; 
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--navy);
+    font-weight: 500; 
+}
 .access-box {
-    background: #FDFBF9;
+    background: rgba(247, 246, 242, 1);
     padding: 80px;
     text-align: center;
     border-radius: 20px;
     margin-bottom: 90px;
 }
-
 .promo-text { 
     margin: 5px 0 15px; 
-    color: rgba(98, 115, 130, 1), 1); 
+    color: rgba(98, 115, 130, 1);
 }
 .access-footer { 
     display: flex; 
     justify-content: center; 
-    gap: 10px; margin-top: 25px; 
+    gap: 10px; 
+    margin-top: 25px; 
     color: rgba(98, 115, 130, 1); 
     font-size: 14px; 
 }
-
-
 footer { 
     background: rgba(0, 25, 49, 1); 
     padding: 50px 0 30px; 
@@ -218,14 +211,14 @@ footer {
 .footer-top { 
     display: flex; 
     justify-content: space-between;
-    color:var(--white);
+    color: white;
     align-items: center;
-     }
+}
 .social-links { 
     display: flex; 
     flex-direction: column; 
     align-items: flex-end; 
-    gap: 10px; 
+    gap: 11px; 
 }
 .social-links .icons { 
     display: flex;
@@ -234,12 +227,12 @@ footer {
 }
 .divider { 
     border: 0; 
-    border-top: 1px solid rgba(229, 231, 235, 1); 
+    border-top: 1px solid white;
     margin: 40px 0; 
 }
 .copyright { 
     text-align: center;
-    color:white;
+    color: white;
     font-size: 14px; 
     opacity: 0.7; 
 }
